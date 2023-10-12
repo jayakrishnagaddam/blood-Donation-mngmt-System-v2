@@ -2,7 +2,7 @@
   <html>
     <head>
       <title>
-      This Html title
+      Jobs and Careers
       </title>
       <style>
         h1{
@@ -47,12 +47,27 @@
       <div id="container">
     <h1> Google Careers</h1>
       <img id="banner" src ="https://firstproject-krishna.2100090162.repl.co/static/banner.jpeg" height="500">
-    <h2>About Google</h2>  
+    <h2>About Us</h2>  
         <p>
         Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.There are several reasons why Google is important: Google Search: Google's search engine is used by millions of people around the world to find information on the internet. It is known for its accuracy and comprehensiveness, and it is often the first place people turn.
         </p>
       <h3>Open positions</h3>
-      <p> To do List--> Job Openings will be shown here...</p>
+      <p> 
+        {% for job in jobs%}
+        <div style="margin-bottom:6px">
+        </div>
+        <div style="font-family:garamond;">
+        {{job['title']}}
+        </div>
+         <div style="font-family:garamond;">
+        <b>Location:</b>{{job['Location']}}
+        </div>
+         <div style="font-family:garamond;">
+       <b> Salary:</b> {{job['Salary']}}
+        </div>
+        <button style="color:greenyellow; font-family:garamond;">Apply</button>
+        {%endfor%}
+      </p>
         <div style="text-align:center;">
       <button>Contact Us!</button>
         </div>
