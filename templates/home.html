@@ -2,7 +2,7 @@
   <html>
     <head>
       <title>
-      Jobs and Careers
+      Donate With Hand Us
       </title>
        <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,20 +13,25 @@
      {% include 'nav.html' %}
       <div class="container">
       <div>
-    <h1 class="text-center mt-2 mb-4"> Google Careers</h1>
-      <img class="img-fluid" id="banner" src ="https://firstproject-krishna.2100090162.repl.co/static/banner.jpeg" height="500">
-    <h2 class="text-center mt-2 mb-4 ">About Us</h2>  
+        <img class="img-fluid" id="banner" src ="https://firstproject-krishna.2100090162.repl.co/static/banner.jpeg" height="1000">
+    <h1 class="text-center mt-2 mb-4"> Hand Us </h1>
         <p class="lead">
-        Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.There are several reasons why Google is important: Google Search: Google's search engine is used by millions of people around the world to find information on the internet. It is known for its accuracy and comprehensiveness, and it is often the first place people turn.
+          In today's digital age, donating to causes and organizations has become easier than ever, thanks to the proliferation of online donation websites. However, with this convenience comes the responsibility of ensuring the safety and assurance of your contributions. When you decide to support a cause close to your heart, you want to be certain that your hard-earned money reaches its intended destination, making a real impact. That's where our donation website comes into play - a platform dedicated to providing you with a secure, reliable, and trustworthy avenue for your philanthropic endeavors.
         </p>
-      <h3 class="text-center mt-2 mb-4">Job Openings</h3>
+    <h2 class="text-center mt-4 mb-2 ">About Hand Us</h2>  
+        <p class="lead">
+          When it comes to donating, trust and security are paramount. Our donation website is committed to providing a safe and trustworthy environment for your contributions. By choosing to give through us, you're not only supporting causes you're passionate about but also ensuring that your generosity has a meaningful impact.
+
+          Join us in making a difference. Start your journey with our donation platform today, knowing that your kindness will be both safe and impactful. Together, we can change the world, one donation at a time.
+        </p>
+      <h3 class="text-center mt-2 mb-4">Help Needed</h3>
         <div> 
           {% for job in jobs %}
           {%include 'jobitem.html'%}
           {% endfor %}
         </div>
         <div class="text-center">
-      <button class="btn btn-primary">Contact Us!</button>
+      <a href='https://www.google.com' class="btn btn-primary">Contact Us!</a>
       </div>
         {%include 'footer.html'%}
     </div>

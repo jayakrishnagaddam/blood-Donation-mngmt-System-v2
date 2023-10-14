@@ -2,37 +2,32 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
-JOBS=[{
-  'id':'1',
-  'title':"Data Analyst",
-  'Location':"Hyderabad, India",
-  'Salary':"1000000"
-  
-},
-     {
-  'id':'2',
-  'title':"Data Scientist",
-  'Location':"Hyderabad, India",
-  'Salary':"2000000"
-  
-},{
-  'id':'3',
-  'title':"Frontend engineer",
-  'Location':"Hyderabad, India",
-  'Salary':"3000000"
-  
-},
-     {
-  'id':'4',
-  'title':"Backend Engineer",
-  'Location':"Hyderabad, India",
-  'Salary':"3000000"
+JOBS = [{
+    'id': '1',
+    'title': "Blood Needed",
+    'Type': "O+",
+    'Location': "Hyderabad, Sims Hospital"
+}, {
+    'id': '2',
+    'title': "Money Needed",
+    'Type': "Cancer Patient",
+    'Location': "Guntur, Andhra Hospitals"
+}, {
+    'id': '3',
+    'title': "Money Needed",
+    'Type': "Old age House",
+    'Location': "Hyderabad, Lahur Old Age Hospital"
+}, {
+    'id': '1',
+    'title': "Blood Needed",
+    'Type': "O+",
+    'Location': "Amaravathi, Andhra Pradesh, Manipal Hospitals"
 }]
 
+
 @app.route("/")
-def hello_world():
-  return render_template('home.html',jobs=JOBS)
+def function():
+  return render_template('home.html', jobs=JOBS)
 
 
 if __name__ == '__main__':
